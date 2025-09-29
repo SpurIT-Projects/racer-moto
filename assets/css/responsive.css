@@ -1,0 +1,341 @@
+/* Адаптивные стили для мобильных устройств */
+
+/* Планшеты и маленькие ноутбуки */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero {
+        padding: 60px 0 !important;
+    }
+    
+    .hero > .container > div {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        text-align: center;
+    }
+    
+    .categories,
+    .advantages,
+    .contact {
+        padding: 60px 0 !important;
+    }
+}
+
+/* Планшеты портрет */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Header адаптация */
+    .header-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    .search-box {
+        width: 120px;
+        order: 3;
+        flex-basis: 100%;
+    }
+    
+    .mobile-menu-toggle {
+        order: 2;
+    }
+    
+    /* Hero секция */
+    .hero {
+        padding: 40px 0 !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .hero p {
+        font-size: 16px !important;
+    }
+    
+    .hero .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    /* Секции */
+    .categories,
+    .featured-product,
+    .advantages,
+    .contact {
+        padding: 50px 0 !important;
+    }
+    
+    /* Featured product */
+    .featured-product > .container > div {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        text-align: center;
+    }
+    
+    /* Карточки преимуществ */
+    .advantages > .container > div:last-child {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+        gap: 30px !important;
+    }
+    
+    /* Контактные карточки */
+    .contact > .container > div:last-child {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    /* Характеристики продукта */
+    .featured-product .product-content > div {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    
+    .featured-product .product-content > div > div {
+        flex: none !important;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Header */
+    .header-top {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    
+    .header-top .container {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    .contact-info a {
+        margin: 0 10px;
+        font-size: 12px;
+    }
+    
+    .header-main {
+        padding: 10px 0;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+    
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    .search-box {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    /* Типографика */
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    /* Hero секция */
+    .hero {
+        padding: 30px 0 !important;
+    }
+    
+    .hero p {
+        font-size: 14px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Секции */
+    .categories,
+    .featured-product,
+    .advantages,
+    .contact {
+        padding: 40px 0 !important;
+    }
+    
+    /* Карточки категорий */
+    .category-card {
+        padding: 20px !important;
+    }
+    
+    .category-card h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Advantage карточки */
+    .advantage-card {
+        padding: 20px !important;
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Contact карточки */
+    .contact-card {
+        padding: 20px !important;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 0 20px !important;
+    }
+    
+    .footer-content {
+        gap: 25px !important;
+    }
+    
+    .footer-section h3 {
+        font-size: 16px;
+    }
+    
+    .footer-bottom {
+        font-size: 12px;
+    }
+    
+    .legal-info {
+        font-size: 11px !important;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero {
+        padding: 20px 0 !important;
+    }
+    
+    .categories,
+    .featured-product,
+    .advantages,
+    .contact {
+        padding: 30px 0 !important;
+    }
+    
+    .btn {
+        font-size: 12px !important;
+        padding: 8px 16px !important;
+    }
+    
+    .category-card,
+    .advantage-card,
+    .contact-card {
+        padding: 15px !important;
+    }
+    
+    .footer {
+        padding: 25px 0 15px !important;
+    }
+}
+
+/* Landscape ориентация мобильных устройств */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 30px 0 !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .categories,
+    .featured-product,
+    .advantages,
+    .contact {
+        padding: 40px 0 !important;
+    }
+}
+
+/* Улучшения для touch устройств */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .nav-menu a {
+        padding: 15px 10px;
+    }
+    
+    .mobile-menu-toggle {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 10px;
+    }
+    
+    .search-btn {
+        min-height: 40px;
+        min-width: 40px;
+    }
+    
+    #scrollToTop {
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+/* Печать */
+@media print {
+    .header,
+    .footer,
+    #scrollToTop,
+    .mobile-menu-toggle,
+    .search-box {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+    
+    .hero,
+    .categories,
+    .featured-product,
+    .advantages,
+    .contact {
+        padding: 20px 0 !important;
+    }
+    
+    * {
+        color: #000 !important;
+        background: #fff !important;
+    }
+}
